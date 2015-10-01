@@ -6,15 +6,19 @@
 
     <meta charset="utf-8" />
     <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
-    <meta name="viewport" content="width-device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/jquery.mobile-1.4.1.min.css" />
     <link rel="shortcut icon" href="http://detect-inc.com/images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ol3/3.5.0/ol.css" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 
     <script src="js/jquery-1.9.1.min.js"></script>    
     <script src="js/jquery.mobile-1.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ol3/3.5.0/ol.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 </head>
   <body>
     <header id="main-header" >
@@ -44,7 +48,7 @@
               <input type="file" id="gpsInput" value="gpsInput" accept=".gps"></p>
             </p>
             <p>
-              <label for="photoInput">Clutter Map Upload</label>
+              <label for="clutterInput">Clutter Map Upload</label>
               <input type="file" id="clutterInput" value="clutterInput"></p>
             </p>
             <p>
@@ -84,11 +88,11 @@
             <p>Longitude: </p><p id="longitudeResult" class="resultText"></p>
           </article>
         </div>
-        <pre id="fileDisplayArea"></pre>
       </section>
       <aside>
         <div id="map" class="map"></div><!-- Dimensions of map are set in CSS-->
       </aside>
     </div>
+    <script src="js/main.js"></script>
   </body>
 </html>
